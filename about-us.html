@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>من نحن</title>
+    <link rel="icon" type="image/png" href="ChatGPT Image 4 juin 2025, 14_53_49.png">
+
+  <style>
+    /* نفس تصميم صفحة التسجيل */
+    @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+    body, html {
+      margin: 0; padding: 0;
+      height: 100%;
+      font-family: 'Cairo', sans-serif;
+      background: #0e1a28;
+      color: #00ffe7;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      z-index: 0;
+    }
+
+    .content-box {
+      position: relative;
+      z-index: 1;
+      background: rgba(14, 26, 40, 0.85);
+      padding: 30px 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00ffe7;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* زر الرجوع للصفحة الرئيسية */
+    .btn-home {
+      margin-top: 30px;
+      padding: 10px 25px;
+      background-color: #00ffe7;
+      color: #0e1a28;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-home:hover {
+      background-color: #00b8a9;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <div class="content-box" role="main" aria-label="محتوى من نحن">
+    <h1>من نحن</h1>
+    <p>
+      نحن فريق متطوع ومتكامل، هدفنا نشر العلم وتقديم المساعدة للناس بكل صدق وإخلاص. نؤمن بأن العلم هو القوة التي تبني الأمم، ولهذا نسعى جاهدين لتوفير محتوى تعليمي وثقافي يساهم في رفع مستوى الوعي والمعرفة في مجتمعنا.
+    </p>
+    <p>
+      منصتنا جاءت تحت خطاب جلالة الملك محمد السادس نصره الله، الذي قال :
+      <br />
+      <em>" العلم والمعرفة هما الركيزة الأساسية لبناء المغرب الحديث، ولن يتقدم بلدنا إلا بالاستثمار في الإنسان وتطوير قدراته "</em>
+    </p>
+
+    <a href="Home.html" class="btn-home" aria-label="العودة إلى الصفحة الرئيسية">العودة إلى الصفحة الرئيسية</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 200, density: { enable: true, value_area: 1500 } },
+        color: { value: '#00ffe7' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: '#00ffe7', opacity: 0.3, width: 1 },
+        move: { enable: true, speed: 2, direction: 'none', random: false, straight: false, out_mode: 'bounce', bounce: true }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'grab' },
+          onclick: { enable: true, mode: 'push' },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 0.5 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+</body>
+</html>
